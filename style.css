@@ -393,12 +393,13 @@ nav .side-bar {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+  background-color: white;
   overflow: hidden; /* To hide the layer outside */
 }
 .image1 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .image2 {
   position: relative; /* Important for absolute positioning */
@@ -410,7 +411,7 @@ nav .side-bar {
 .image2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .image3 {
   position: relative; /* Important for absolute positioning */
@@ -443,7 +444,7 @@ nav .side-bar {
 }
 
 .layer p {
-  text-align: justify;
+  text-align: center;
 }
 .layer a {
   height: 50px;
@@ -467,6 +468,7 @@ nav .side-bar {
 .image3:hover .layer {
   bottom: 0;
 }
+
 #skills {
   background-color: var(--secondy-color);
   width: 100%;
@@ -481,7 +483,7 @@ nav .side-bar {
   line-height: 1.7;
   transform: scaleY(1.8);
   text-transform: uppercase;
-  margin: 2vh 0;
+  padding: 2vh 0;
 }
 .skill-text p {
   max-width: 80%;
@@ -589,14 +591,14 @@ nav .side-bar {
 }
 footer {
   width: 100%;
-  height: 15vh;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--footer-color);
 }
 footer p {
-  font-size: 0.8vw;
+  font-size: 1.3vw;
   font-weight: 700;
   color: orange;
 }
@@ -655,7 +657,6 @@ footer p {
   .intro-headings h1 {
     font-size: 2vw;
   }
-
   .about-image-container {
     height: 60vh;
     width: 50%;
@@ -677,6 +678,14 @@ footer p {
 
 @media screen and (max-width: 700px) {
   nav ul {
+    display: none;
+  }
+  #introduction nav,
+  #about nav,
+  #education nav,
+  #project nav,
+  #skills nav,
+  #contact nav {
     display: none;
   }
   .toggle-btn-container,
