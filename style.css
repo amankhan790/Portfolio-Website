@@ -546,7 +546,7 @@ nav .side-bar {
 }
 
 .contact-text-container p {
-  font-size: 2vw;
+  font-size: 1.3vw;
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
@@ -614,8 +614,8 @@ footer {
   background: var(--footer-color);
 }
 footer p {
-  font-size: 1.3vw;
-  font-weight: 700;
+  font-size: 1vw;
+  font-weight: 500;
   color: orange;
 }
 .dropdown-menu {
