@@ -47,7 +47,7 @@ nav {
 
 nav h2 {
   color: orange;
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 nav ul {
@@ -138,8 +138,17 @@ nav .side-bar {
   text-transform: uppercase;
   transform: scaleY(1.5);
   color: var(--primary-color);
+  animation: fadeIn 3s ease-in-out;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
 .hero-content span {
   font-size: 5vw;
   font-family: "Aguafina Script", "Allura";
@@ -699,8 +708,14 @@ footer p {
   hr {
     display: none;
   }
+  nav h2 {
+    font-size: 4.5vw;
+  }
   nav .side-bar {
     display: block;
+  }
+  .hero-content {
+    margin-top: 25px;
   }
   .hero-footer {
     /* margin-top: 30px;*/
