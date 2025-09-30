@@ -42,7 +42,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw 6vw;
+  padding: 4vw 6vw;
 }
 
 nav h2 {
@@ -118,6 +118,7 @@ nav .side-bar {
 
 .hero-content {
   position: relative;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .hero-heading {
@@ -138,7 +139,6 @@ nav .side-bar {
   text-transform: uppercase;
   transform: scaleY(1.5);
   color: var(--primary-color);
-  animation: fadeIn 3s ease-in-out;
 }
 @keyframes fadeIn {
   0% {
@@ -550,7 +550,6 @@ nav .side-bar {
   color: var(--primary-color);
   margin-bottom: 2rem;
 }
-
 .contact-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -583,6 +582,10 @@ nav .side-bar {
   font-size: 1vw;
   margin: 5px 0 0;
   color: var(--primary-color);
+}
+.contact-text p a {
+  text-decoration: none;
+  color: var(--primary-color);;
 }
 .contact-image {
   width: 40vw;
