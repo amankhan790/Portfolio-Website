@@ -13,11 +13,13 @@
   --primary-color: #fff;
   --secondy-color: #000;
   --footer-color: #151515;
+  --footer-p: #ffa500;
 }
 .white-theme {
   --primary-color: #000;
   --secondy-color: #fff;
   --footer-color: #b0afaf;
+  --footer-p: #000000d6;
 }
 
 html,
@@ -616,7 +618,7 @@ footer {
 footer p {
   font-size: 1vw;
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--footer-p);
 }
 .dropdown-menu {
   /* display: none; */
@@ -835,5 +837,6 @@ footer p {
   }
   footer p {
     font-size: 2.5vw;
+    color: black;
   }
 }
