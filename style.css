@@ -17,7 +17,7 @@
 .white-theme {
   --primary-color: #000;
   --secondy-color: #fff;
-  --footer-color: #f7f3f3;
+  --footer-color: #b0afaf;
 }
 
 html,
@@ -616,7 +616,7 @@ footer {
 footer p {
   font-size: 1vw;
   font-weight: 500;
-  color: orange;
+  color: var(--primary-color);
 }
 .dropdown-menu {
   /* display: none; */
