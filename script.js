@@ -25,11 +25,11 @@ tl.from(".hero-heading,.smalltext",{
   stagger:0.15
 },"-=-0.3")
 
-// tl.from(".hero-footer",{
-//   y:"40px",
-//   opacity:0,
-//   duration:1
-// },"-=4")
+tl.from(".hero-footer",{
+  y:"40px",
+  opacity:0,
+  duration:1
+},"-=4")
 
 
 modeBtn.addEventListener("click", () => {
