@@ -18,12 +18,12 @@ tl.from("nav h2,nav ul,nav .toggle-btn-container,.side-bar", {
   // delay: 1,
   stagger:0.15
 });
-// tl.from(".hero-heading,.smalltext",{
-//   x:-150,
-//   opacity:0,
-//   duration:0.8,
-//   stagger:0.15
-// },"-=-0.3")
+tl.from(".hero-heading,.smalltext",{
+  x:-150,
+  opacity:0,
+  duration:0.8,
+  stagger:0.15
+},"-=-0.3")
 
 // tl.from(".hero-footer",{
 //   y:"40px",
