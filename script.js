@@ -1,6 +1,7 @@
 const sideBar = document.querySelector(".side-bar i");
 const dropDownMenu = document.querySelector(".dropdown-menu i");
 const navModeBtn = document.querySelector(".mode-btn i");
+const navList = document.querySelector(".nav-list");
 const modeBtn = document.querySelector(".toggle-btn-container i");
 const introBtn = document.querySelector(".intro-toggle i");
 const aboutBtn = document.querySelector(".about-toggle i");
@@ -62,6 +63,9 @@ function sideBarAnimation() {
   dropDownMenu.addEventListener("click", () => {
     tl.reverse();
   });
+  navList.addEventListener("click", () => {
+    tl.reverse();
+  });
   navModeBtn.addEventListener("click", () => {
     document.body.classList.toggle("white-theme");
   });
@@ -90,4 +94,3 @@ skillsBtn.addEventListener("click", () => {
 contactBtn.addEventListener("click", () => {
   document.body.classList.toggle("white-theme");
 });
-

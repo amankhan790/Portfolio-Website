@@ -119,16 +119,14 @@ nav .side-bar {
   top: 6px;
   right: 0.5vw;
 }
-
 .dropdown-menu {
+  position: fixed;
   display: none;
-  margin-right: 15px;
+  margin: 15px 15px 0 0;
   width: 70%;
   height: 60vh;
-  position: absolute;
-  top: 15px;
-  right: -100%;
-  /* background-color: #000; */
+  top: 0%;
+  right: -80%;
   background-color: rgb(233, 159, 21, 0.5);
   backdrop-filter: blur(50px);
   padding-top: 65px;
@@ -728,7 +726,7 @@ footer p {
     display: none;
   }
   nav h2 {
-    font-size: 4.5vw;
+    font-size: 6vw;
   }
   nav .side-bar {
     display: block;
