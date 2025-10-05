@@ -20,6 +20,7 @@
   --secondy-color: #fff;
   --footer-color: #b0afaf;
   --footer-p: #000000d6;
+  --posstion: 0;
 }
 
 html,
@@ -121,7 +122,6 @@ nav .side-bar {
 }
 .dropdown-menu {
   position: fixed;
-  display: none;
   margin: 15px 15px 0 0;
   width: 70%;
   height: 60vh;
@@ -153,32 +153,27 @@ nav .side-bar {
   text-transform: uppercase;
 }
 .mode-btn {
-  margin-top: 20px;
-  padding: 5px 50px;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  background-color: #000;
-  color: #fff;
-}
-/* h4 {
-  font-size: 50px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.full i {
   position: absolute;
-  top: 5%;
-  right: 10%;
-  background-color: white;
-  border-radius: 50%;
-  padding: 5px;
-  font-weight: 600;
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 18px;
+  top: 20px;
+  left: 20px;
+  background-color: var(--secondy-color);
+  border-radius: 5px;
+  border: 0.1px solid rgba(128, 128, 128, 0.776);
   cursor: pointer;
-} */
-
+}
+.mode-btn .squre {
+  position: absolute;
+  right: var(--posstion);
+  margin: 0 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
 .hero-content {
   position: relative;
 }

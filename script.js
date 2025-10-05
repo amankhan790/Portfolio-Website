@@ -1,6 +1,6 @@
 const sideBar = document.querySelector(".side-bar i");
 const dropDownMenu = document.querySelector(".dropdown-menu i");
-const navModeBtn = document.querySelector(".mode-btn i");
+const navModeBtn = document.querySelector(".mode-btn");
 const navList = document.querySelector(".nav-list");
 const modeBtn = document.querySelector(".toggle-btn-container i");
 const introBtn = document.querySelector(".intro-toggle i");
@@ -46,13 +46,14 @@ function sideBarAnimation() {
     right: 0,
     duration: 0.3,
   });
+  tl.from(".dropdown-menu ul i", {
+    opacity: 0,
+    duration: 0.3,
+  });
   tl.from(".dropdown-menu ul li,.mode-btn", {
     x: 100,
     duration: 0.3,
     stagger: 0.2,
-    opacity: 0,
-  });
-  tl.from(".dropdown-menu ul i", {
     opacity: 0,
   });
   tl.pause();
