@@ -37,6 +37,13 @@ main {
   height: 100%;
   color: var(--primary-color);
 }
+.cursor {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+}
 #hero-section {
   background-color: var(--secondy-color);
   width: 100%;
@@ -47,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 20px;
+  padding: 2vw 6vw;
 }
 
 nav h2 {

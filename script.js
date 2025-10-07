@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const sideBar = document.querySelector(".side-bar i");
 const dropDownMenu = document.querySelector(".dropdown-menu i");
 const navModeBtn = document.querySelector(".mode-btn");
@@ -10,6 +11,15 @@ const projectBtn = document.querySelector(".project-toggle i");
 const skillsBtn = document.querySelector(".skills-toggle i");
 const contactBtn = document.querySelector(".contact-toggle i");
 
+main.addEventListener("mousemove",(e) => {
+  gsap.to(".cursor",{
+    x:e.x,
+    y:e.y,
+    duration:1,
+
+  })
+  
+})
 // GSAP ANIMATION
 function firstPageAnimation() {
   let tl = gsap.timeline();
