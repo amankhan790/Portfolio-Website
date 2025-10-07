@@ -777,6 +777,9 @@ footer p {
   .intro-text-container p {
     width: 100%;
   }
+  .second-image {
+    display: none;
+  }
   .about-content {
     flex-direction: column;
     gap: 2rem;
