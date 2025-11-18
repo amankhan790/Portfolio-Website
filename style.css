@@ -233,6 +233,21 @@ nav .side-bar {
   text-transform: uppercase;
   font-size: 1.5vw;
 }
+.resume {
+  padding: 0.6vw 1.5vw;
+  border-radius: 30px;
+  background: orange;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.resume a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  font-weight: 600;
+}
 
 .bottom-content {
   display: flex;
@@ -265,7 +280,7 @@ nav .side-bar {
 }
 
 .hero-footer h2 {
-  font-size: 2vw;
+  font-size: 20px;
   text-transform: uppercase;
   color: orange;
 }
@@ -715,6 +730,9 @@ footer p {
 } */
 
 @media screen and (max-width: 700px) {
+  .cursor {
+    display: none;
+  }
   nav ul {
     display: none;
   }
@@ -752,6 +770,9 @@ footer p {
   .hero-footer {
     /* margin-top: 30px;*/
     padding-bottom: 25px;
+  }
+  .hero-footer h2 {
+    font-size: 15px;
   }
   .intro-content {
     display: flex;
