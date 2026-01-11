@@ -60,9 +60,13 @@ nav {
   padding: 2vw 6vw;
 }
 
-nav h2 {
-  color: orange;
-  font-size: 2.5vw;
+nav div {
+  width: 150px;
+  height: 100px;
+}
+nav div img {
+  width: 100%;
+  height: 100%;
 }
 
 nav ul {
@@ -886,3 +890,4 @@ footer p {
     font-size: 2.5vw;
   }
 }
+

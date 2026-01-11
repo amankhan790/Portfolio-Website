@@ -82,6 +82,7 @@ function sideBarAnimation() {
 firstPageAnimation();
 sideBarAnimation();
 
+// document.body.classList = "white-theme";
 modeBtn.addEventListener("click", () => {
   document.body.classList.toggle("white-theme");
 });
