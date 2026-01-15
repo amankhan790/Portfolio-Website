@@ -11,6 +11,13 @@ const projectBtn = document.querySelector(".project-toggle i");
 const skillsBtn = document.querySelector(".skills-toggle i");
 const contactBtn = document.querySelector(".contact-toggle i");
 
+sideBar.addEventListener("click", () => {
+  sideBar.style.display = "none";
+});
+// dropDownMenu.addEventListener("click", () => {
+//   sideBar.style.display = "block";
+// });
+
 main.addEventListener("mousemove", (e) => {
   gsap.to(".cursor", {
     x: e.x,
