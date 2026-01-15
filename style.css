@@ -59,19 +59,20 @@ nav {
   align-items: center;
   padding: 2vw 6vw;
 }
-nav h2 {
-  color: orange;
-}
 
-nav div {
-  top: 5px;
-  width: 150px;
+.logo-conatiner {
+  width: 120px;
   height: 100px;
+  overflow: hidden;
+  /* background-color: red; */
 }
-nav div img {
+.logo-conatiner img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
   color: #ffa500;
+  font-weight: 500;
+  display: block;
 }
 
 nav ul {
@@ -112,10 +113,16 @@ nav ul li a:hover:after {
   width: 100%;
 }
 nav .side-bar {
-  color: #ffa500;
-  font-size: 5vw;
-  cursor: pointer;
   display: none;
+  width: 30px;
+  height: 40px;
+  color: #ffa500;
+  font-size: 30px;
+  position: absolute;
+  top: 37px;
+  right: 40px;
+  z-index: 1000;
+  cursor: pointer;
 }
 .toggle-btn-container {
   display: flex;
@@ -154,14 +161,6 @@ nav .side-bar {
   text-align: center;
   border-radius: 6px;
 }
-/* .dropdown-menu ul i {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: black;
-  font-size: 25px;
-  cursor: pointer;
-} */
 .dropdown-menu ul li {
   list-style: none;
 }
@@ -716,12 +715,6 @@ footer p {
 
 /* ---------- 1200px and below (Large screens like small laptops) ---------- */
 @media screen and (max-width: 1700px) {
-  nav div img {
-    display: block;
-  }
-  .logo-heading {
-    display: none;
-  }
   /* .intro-headings h1 {
     font-size: 2vw;
   }
@@ -745,10 +738,6 @@ footer p {
 }
 
 @media screen and (max-width: 700px) {
-  nav div img {
-    display: none;
-  }
-
   .cursor {
     display: none;
   }
@@ -777,22 +766,13 @@ footer p {
   hr {
     display: none;
   }
-  nav .logo-heading {
-    position: absolute;
-    top: 25px;
+  .logo-conatiner {
     display: block;
     /* font-size: 6vw; */
   }
+
   nav .side-bar {
     display: block;
-    overflow: hidden;
-    
-    position: absolute;
-    top: 30px;
-    right: 0;
-    width: 15%; /* NOT 100% */
-    height: 100vh;
-    z-index: 1000;
   }
   .hero-content {
     margin-top: 25px;

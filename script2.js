@@ -25,40 +25,67 @@ main.addEventListener("mousemove", (e) => {
 // ======================================
 // PAGE LOAD ANIMATION
 // ======================================
+// function firstPageAnimation() {
+//   const tl = gsap.timeline();
+
+//   tl.from("nav h2, nav ul, nav .toggle-btn-container, .side-bar", {
+//     y: -40,
+//     opacity: 0,
+//     duration: 0.5,
+//     stagger: 0.15,
+//     ease: "power2.out",
+//   });
+
+//   tl.from(
+//     ".hero-heading, .smalltext",
+//     {
+//       x: -150,
+//       opacity: 0,
+//       duration: 0.8,
+//       stagger: 0.15,
+//     },
+//     "-=-0.3"
+//   );
+
+//   tl.from(
+//     ".hero-footer",
+//     {
+//       y: 25, // less distance
+//       opacity: 0,
+//       duration: 0.4, // ⬅ faster
+//       ease: "power3.out",
+//     },
+//     "-=0.2"
+//   );
+// }
 function firstPageAnimation() {
-  const tl = gsap.timeline();
-
-  tl.from("nav h2, nav ul, nav .toggle-btn-container, .side-bar", {
-    y: -40,
+  let tl = gsap.timeline();
+  tl.from("nav .logo-conatiner,nav ul,nav .toggle-btn-container,.side-bar", {
+    y: "-40px",
     opacity: 0,
-    duration: 0.5,
+    duration: 0.7,
     stagger: 0.15,
-    ease: "power2.out",
   });
+  tl.from(
+    ".hero-heading,.smalltext",
+    {
+      x: -150,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.15,
+    },
+    "-=-0.3"
+  );
 
- tl.from(
-  ".hero-heading, .smalltext",
-  {
-    x: -100,              // shorter travel = faster feel
-    opacity: 0,
-    duration: 0.4,        // ⬅ faster
-    stagger: 0.08,        // ⬅ faster
-    ease: "power3.out",   // ⬅ snappier
-  },
-  "-=0.2"
-);
-
-tl.from(
-  ".hero-footer",
-  {
-    y: 25,                // less distance
-    opacity: 0,
-    duration: 0.4,        // ⬅ faster
-    ease: "power3.out",
-  },
-  "-=0.2"
-);
-
+  tl.from(
+    ".hero-footer",
+    {
+      y: "40px",
+      opacity: 0,
+      duration: 1,
+    },
+    "-=4"
+  );
 }
 
 // ======================================
